@@ -1,0 +1,93 @@
+*HTML stands for Hyper Text Markup language
+*It is the backbone of any website providing the basic structure and contents
+*Web is the platform where information is stored and shared in the form of web pages
+*tells the browser that this an html document-DOCTYPE Html
+
+
+*<!DOCTYPE html><!--tells the browser that this an html document-->
+<html lang="en"><!--it is an opening for our html content-->
+<head><!--holds information that is not visible to the user-->
+    <meta charset="UTF-8"><!--ensures that our page can display all types of characters correctly, even special characters should be visible on the website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- ensures that the page looks good on all the devices inluding mobile-->
+    <title>My Website</title><!--the title that appears on the browser tag-->
+</head>
+<body><!--everything inside this tag will appear on the actual page that users see-->
+    <p>hello</p>
+</body>
+</html>
+*en- its the language that ensures which language we are using
+
+
+*tags-in html tags are building blocks of web pages, they are used to define and organise the content on a webpage such as text, images, link etc.
+*heading tags- h1 to h6
+*headings are like titles, they help users and search engine, understand what different parts of a page are about
+*there are 6 levels of headings, h1 most important, h2 to h6 least important
+
+*the p tag is used for paragraphs which are blocks of text. eg: on a blog post each of the text explaining the point is a paragraph
+*anchor tag helps us to navigate other web pages and is used to add a link of the web address
+
+*the image tag is used to display images on a webpage
+*the src attribute is the location of the image
+*alt attribute describes the image important for accessibility and when images don't load
+
+*Attribute is the additional info of the html tags
+*eg:height, direction, width, scrollamount, behavior, bgcolor, loop
+
+*in html, elements are grouped in lists, 3 types of list-ordered, unordered, definition list
+
+*the ordered list is used when items have specific sequence or order, these items are ordered
+
+*li tag-list tag
+*dl tag-definition list
+*dd tag-definition description
+*ul tag-unordered list(bullet points)
+*ol tag-ordered list(numbered from 1)
+*br tag-gives break
+
+*<h2>Top 3 programming languages</h2>
+        <ol>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+        </ol>
+    Syntax of ordered
+
+*unordered list- an unordered list is used to create a list of items that do not have a specific order
+*the items are typically marked with bullet points
+*syntax of unordered
+<h1>Fruits</h1>
+    <ul>
+        <li>Dragon Fruit</li>
+        <li>Orange</li>
+        <li>Kiwi</li>
+    </ul>
+
+*definition list is used for terms and their definition
+*each term is defined by its description
+*syntax of definition list
+<dl>
+        <dt>Python</dt>
+        <dd>A high-level programming language known for its readability and simplicity </dd><br>
+</dl>
+
+
+*structure of a table:
+*table tag-creates table
+*tr tag-creates table row
+*th tag-table header(column)
+td tag-table data
+
+*table tag in html is used to create a table which is structured way to display data in rows and columns
+*tables are commonly used to present tabular data such as sheet and list
+
+*for comment,<!-- -->, just press ctrl+/
+
+
+*the span tag is used when we want to style or target only part of a text or elements inside a sentence or paragraph
+
+*html5 introduced semantic elements to give meaning to a structure of a web page
+*semantic elements in html are tags that adds meaning about the content they contain inside it
+*the header element represents introductory content or navigation links
+*it typically contains the sites logo, the title and sometimes the navigation menu
+*the navigation tags defines a set of navigation links, it helps identify a navigation area of a website
+*the section tag is a thematic grouping of content typically with a heading

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the page (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page mobile-friendly -->
+    <title>Stylish Contact Form</title> <!-- The title of the page (what appears on the browser tab) -->
+    <style>
+        /* Basic styling for the entire page */
+        body {
+            font-family: Arial, sans-serif; /* Sets the font of the page to Arial */
+            background-color: #f4f7fc; /* Light grey-blue background color */
+            display: flex; /* Uses flexbox for layout */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh; /* Makes the page take up the full height of the screen */
+            margin: 0; /* Removes default margin from the body */
+        }
+
+        /* Styling for the form container */
+        .form-container {
+            background-color: #fff; /* White background for the form */
+            padding: 30px; /* Adds space inside the form */
+            border-radius: 8px; /* Makes the corners of the form rounded */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the form for a lifted effect */
+            width: 400px; /* Sets a fixed width for the form */
+            text-align: center; /* Centers text inside the form */
+        }
+
+        /* Styling for the heading (Contact Us) */
+        h2 {
+            color: #333; /* Dark grey color for the heading */
+        }
+
+        /* Label styling (used for form labels like "Name:") */
+        label {
+            display: block; /* Makes label take up the full width */
+            margin-bottom: 8px; /* Adds space below the label */
+            font-weight: bold; /* Makes the label text bold */
+            text-align: left; /* Aligns the label text to the left */
+        }
+
+        /* Styling for input fields, select boxes, and text areas */
+        input, select, textarea {
+            width: 100%; /* Makes the input fields take up the full width */
+            padding: 10px; /* Adds space inside the input fields */
+            margin: 10px 0; /* Adds space above and below the fields */
+            border: 1px solid #ddd; /* Adds a light grey border around the fields */
+            border-radius: 4px; /* Makes the corners of the fields rounded */
+            box-sizing: border-box; /* Ensures padding is included in the element's width */
+        }
+
+        /* Allows text areas to be resized vertically */
+        textarea {
+            resize: vertical;
+        }
+
+        /* Styling for radio buttons and checkboxes */
+        input[type="radio"], input[type="checkbox"] {
+            width: auto; /* Makes the radio buttons and checkboxes take their default size */
+            margin-right: 10px; /* Adds space to the right of the radio buttons and checkboxes */
+            vertical-align: middle; /* Aligns the radio buttons and checkboxes vertically with the labels */
+        }
+
+        /* Group styling for form elements (radio buttons and checkboxes) */
+        .radio-group, .checkbox-group {
+            display: flex; /* Uses flexbox to align items in a row */
+            justify-content: flex-start; /* Aligns the radio buttons and checkboxes to the left */
+            margin-top: 5px; /* Adds space above the group */
+        }
+
+        /* Label styling for radio buttons and checkboxes */
+        .radio-group label, .checkbox-group label {
+            margin-right: 20px; /* Adds space between multiple radio buttons or checkboxes */
+            margin-left: 2px; /* Adds space to the left of the label */
+        }
+
+        /* Styling for the submit button */
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green background color for the button */
+            color: white; /* White text color */
+            padding: 10px 20px; /* Adds space inside the button */
+            border: none; /* Removes the default border around the button */
+            border-radius: 4px; /* Rounds the corners of the button */
+            cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+            font-size: 16px; /* Sets the font size of the button */
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Changes the button color when the user hovers over it */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Form container where everything will be placed -->
+    <div class="form-container">
+        <h2>Contact Us</h2> <!-- The title of the form -->
+        <form>
+            <!-- Name field -->
+            <div class="form-group">
+                <label for="name">Name:</label> <!-- Label for the name input field -->
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- Input field for the name -->
+            </div>
+
+            <!-- Email field -->
+            <div class="form-group">
+                <label for="email">Email:</label> <!-- Label for the email input field -->
+                <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- Input field for the email -->
+            </div>
+
+            <!-- Gender selection (radio buttons) -->
+            <div class="form-group">
+                <label>Gender:</label> <!-- Label for the gender selection -->
+                <div class="radio-group">
+                    <!-- Radio button for Male -->
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label> <!-- Label for the Male radio button --> 
+                    <!-- Radio button for Female -->
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label> <!-- Label for the Female radio button --> 
+                </div>
+            </div><br>
+
+            <!-- Newsletter subscription (checkbox) -->
+            <div class="form-group">
+                <label>Subscribe to newsletter:</label> <!-- Label for the checkbox --> <br>
+                <div class="checkbox-group">
+                    <!-- Checkbox for subscribing to newsletter -->
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Yes, I would like to receive updates</label> <!-- Label for the checkbox -->
+                </div>
+            </div><br>
+
+            <!-- Country selection (dropdown) -->
+            <div class="form-group">
+                <label for="country">Country:</label> <!-- Label for the country dropdown -->
+                <select id="country" name="country"> <!-- Dropdown for country selection -->
+                    <option value="india">India</option> <!-- Option for India -->
+                    <option value="usa">USA</option> <!-- Option for USA -->
+                    <option value="uk">UK</option> <!-- Option for UK -->
+                </select>
+            </div>
+
+            <!-- Message field -->
+            <div class="form-group">
+                <label for="message">Message:</label> <!-- Label for the message textarea -->
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea> <!-- Textarea for the message -->
+            </div>
+
+            <!-- Submit button to submit the form -->
+            <input type="submit" value="Submit"> <!-- Submit button -->
+        </form>
+    </div>
+
+</body>
+</html>

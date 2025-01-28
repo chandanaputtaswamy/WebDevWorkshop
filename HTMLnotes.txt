@@ -1,0 +1,239 @@
+*HTML stands for Hyper Text Markup language
+*It is the backbone of any website providing the basic structure and contents
+*Web is the platform where information is stored and shared in the form of web pages
+*tells the browser that this an html document-DOCTYPE Html
+
+
+*<!DOCTYPE html><!--tells the browser that this an html document-->
+<html lang="en"><!--it is an opening for our html content-->
+<head><!--holds information that is not visible to the user-->
+    <meta charset="UTF-8"><!--ensures that our page can display all types of characters correctly, even special characters should be visible on the website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- ensures that the page looks good on all the devices inluding mobile-->
+    <title>My Website</title><!--the title that appears on the browser tag-->
+</head>
+<body><!--everything inside this tag will appear on the actual page that users see-->
+    <p>hello</p>
+</body>
+</html>
+*en- its the language that ensures which language we are using
+
+
+*tags-in html tags are building blocks of web pages, they are used to define and organise the content on a webpage such as text, images, link etc.
+*heading tags- h1 to h6
+*headings are like titles, they help users and search engine, understand what different parts of a page are about
+*there are 6 levels of headings, h1 most important, h2 to h6 least important
+
+*the p tag is used for paragraphs which are blocks of text. eg: on a blog post each of the text explaining the point is a paragraph
+*anchor tag helps us to navigate other web pages and is used to add a link of the web address
+
+*the image tag is used to display images on a webpage
+*the src attribute is the location of the image
+*alt attribute describes the image important for accessibility and when images don't load
+
+*Attribute is the additional info of the html tags
+*eg:height, direction, width, scrollamount, behavior, bgcolor, loop
+
+*in html, elements are grouped in lists, 3 types of list-ordered, unordered, definition list
+
+*the ordered list is used when items have specific sequence or order, these items are ordered
+
+*li tag-list tag
+*dl tag-definition list
+*dd tag-definition description
+*ul tag-unordered list(bullet points)
+*ol tag-ordered list(numbered from 1)
+*br tag-gives break
+
+*<h2>Top 3 programming languages</h2>
+        <ol>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+        </ol>
+    Syntax of ordered
+
+*unordered list- an unordered list is used to create a list of items that do not have a specific order
+*the items are typically marked with bullet points
+*syntax of unordered
+<h1>Fruits</h1>
+    <ul>
+        <li>Dragon Fruit</li>
+        <li>Orange</li>
+        <li>Kiwi</li>
+    </ul>
+
+*definition list is used for terms and their definition
+*each term is defined by its description
+*syntax of definition list
+<dl>
+        <dt>Python</dt>
+        <dd>A high-level programming language known for its readability and simplicity </dd><br>
+</dl>
+
+
+*structure of a table:
+*table tag-creates table
+*tr tag-creates table row
+*th tag-table header(column)
+td tag-table data
+
+*table tag in html is used to create a table which is structured way to display data in rows and columns
+*tables are commonly used to present tabular data such as sheet and list
+
+*for comment,<!-- -->, just press ctrl+/
+
+
+*the span tag is used when we want to style or target only part of a text or elements inside a sentence or paragraph
+
+*html5 introduced semantic elements to give meaning to a structure of a web page
+*semantic elements in html are tags that adds meaning about the content they contain inside it
+*the header element represents introductory content or navigation links
+*it typically contains the sites logo, the title and sometimes the navigation menu
+*the navigation tags defines a set of navigation links, it helps identify a navigation area of a website
+*the section tag is a thematic grouping of content typically with a heading
+
+
+
+
+day 2:
+
+
+
+
+*forms are used to collect user input
+*the main tag that wraps all the elements
+*input tag-a versatile tag for various types of inputs like text, password, checkboxes, radio buttons, etc
+*attributes of input tag-
+1. type-specifies the type of input. eg: text, password, email, no
+2. name- identifies the input field and is used to reference the form data after submission.
+3. id- it is an unique identifier that can be used as selector in CSS
+4. required- it says that this field is important to fill
+5. place holder- this is used to display a message and it vanishes as soon as the user enters the data
+
+
+*label tag- it is used to create a text label for form elements such as input fields 
+*textarea- it is a tag used to create a multiline text input field 
+*select tag- it is used to create a dropdown allowing users to select 1 or more options from a pre-defined list
+*button tag- it creates a clickable button a webpage like submit button etc
+
+*attributes of form tag-
+1. action- the action attribute is an html form tag that tells the form where to send the data when it's submitted
+2. method- this attribute in an html form specifies how the form data should be sent to the server when the form is submitted. 2 methods->get method, post method
+	* the get method is used in html form to send data to the server when a user submits a form(not secure)
+	* when user fills out a form and clicks the submit button, the form data is sent to the server
+
+	*post method- it is another way to send data from an html form to a server(secure)
+
+
+
+CSS-stands for Cascading Style Sheet. 
+
+*in simpler terms, CSS is what you use to make your web pages look good
+* inline CSS- written directly in HTML element using style attribute, it applies only to that element
+* in inline, style is an attribute
+* syntax: <h1 style="color: blue; font-size:24px;">HELLO WORLD</h1>
+
+*internal CSS: styles are defined in the style tag, typically in the head section
+* in internal, style is a tag
+*syntax-
+<head>
+	<style>
+		body{
+			background- color : lightgrey
+		}
+		h1{
+			color :red;
+		}
+	</style>
+</head>
+
+*external CSS:CSS is written in separate file with a .css extension and then linked to the html file
+* syntax:
+<head>
+	<link rel:"stylesheet" href="styles.css">
+</head>
+*the rel attribute stands for relationship and defines the relationship between the current html document and the linked file
+* when linking a css style sheet, tells the browser that the link file is style.css
+*href attribute stands for hypertext reference and it specifies the location of the linked file
+
+*CSS syntax and selectors:
+*CSS syntax defines how to select element or tag and apply styles 
+*selector- identifies which html element to style
+*property- the style you want to change. eg: color, font-size, background-color etc
+*value- is assigned to the defined property
+*syntax:
+selector{
+	property : value;
+	}
+*syntax eg:
+	p {
+		color: green;
+	}
+
+
+*types of selectors:
+1. tag/element selector- selects html tags based on the element name. for eg: p,h1, body tag etc
+	*syntax: h1{
+			color: red;
+			font-size: 3rem;
+		}
+		p{
+			color: white;
+			background-color: gray;
+		}
+
+2. id selector- when you have multiple tags of the same type but you want only to style only 1 specific element differently, you can use id attribute
+*id is a unique identifier that helps to apply style to a specific element
+*syntax:
+	<p>Hello</p>
+	<p id="para">Hello World</p>
+	
+	#para{
+	}
+
+3. class selector: selects html elements with a specific class attribute
+*the class selector allows you to apply same style to multiple elements, without having to repeat code
+*eg:
+<p>Hello</p>
+<p class="style">Hello World</p>
+<h class="style">css</h>
+
+4. universal selector: (*)
+* is used to select all the elements in an HTML document
+* it also includes other elements which are inside, under another element
+*syntax: *{
+		color: white;
+		background-color: black;
+	}
+
+
+*CSS basic styling:
+1. color-sets the text color
+2. background- sets the background color of an element 
+3. font size- changes the size of the text
+4. font family-changes the font of the text
+5. text alignment-aligns the text(left, right,center)
+*syntax:
+body{
+	background-color: lightgray;
+	font-family: Ariel,sans-serif;
+}
+h1{
+	color:navy;
+	font-size:32px;
+	text-align:center;
+}
+p{
+	border:1px solid black;
+}
+
+
+*CSS Box Model- layout model that describes how different components of a web element(content, pading, border and margin) are structured and positioned
+*each web element generates a rectanular box that encompasses these components, and the box model allows developers to control the element's size and spacing effectively
+
+*components of box model:
+1. content area- the actual content of the eleement eg, text, images,elc
+	*this is where the content is displayed
+	*the padding surrounds content area and creates space inside the border
+types of padding-padding top,left,bottom,right
+*border area:the border is a line that surrounds padding and content
